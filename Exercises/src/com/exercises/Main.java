@@ -4,18 +4,8 @@ import java.lang.ref.SoftReference;
 import java.util.Scanner;
 
 
-public class Main {
-
-	static Scanner intReader = new Scanner(System.in);
-	static Scanner strReader = new Scanner(System.in);
-	static Scanner doubleReader = new Scanner(System.in);
-	static Double[] prices; 
-	static String[] items;
-	static int ammount = 0;
-	
+public class Main {	
 	public static void main(String[] args) {
-
-		recieptInOut();
 		
 		
 // Menu
@@ -82,17 +72,6 @@ public class Main {
 		}
 	}
 */
-	static void recieptInOut() {
-		System.out.println("Enter an ammount of items: ");
-		ammount = intReader.nextInt();
-		
-		System.out.println("Enter an item and the price: ");
-		String item = strReader.nextLine();
-		Double price = doubleReader.nextDouble();
-		
-		for(int i = 0; i > ammount; i++) {
-			items[i] += item;
-			prices[i] += price;
-		}
+
 	}
 }
